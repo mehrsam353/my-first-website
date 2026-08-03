@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>مدیریت انبار ساده</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>📦 سیستم مدیریت انبار</h1>
+
+        <!-- بخش فرم ورود کالا -->
+        <div class="input-section">
+            <input type="text" id="itemName" placeholder="نام کالا...">
+            <input type="number" id="itemQty" placeholder="تعداد">
+            <button onclick="addItem()">افزودن به انبار</button>
+        </div>
+
+        <!-- بخش جدول نمایش -->
+        <table>
+            <thead>
+                <tr>
+                    <th>نام کالا</th>
+                    <th>تعداد موجود</th>
+                    <th>عملیات</th>
+                </tr>
+            </thead>
+            <tbody id="inventoryBody">
+                <!-- کالاها اینجا اضافه می‌شوند -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

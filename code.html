@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehrsam Shirgahi | Portfolio</title>
+    <style>
+        /* اسکرول نرم برای جابه‌جایی زیبا بین بخش‌ها */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            width: 100%;
+            padding: 60px 20px;
+            text-align: center;
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+            color: #38bdf8;
+            text-transform: capitalize;
+        }
+
+        p.subtitle {
+            font-size: 1.2rem;
+            color: #94a3b8;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 90%;
+            margin: 40px auto;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #38bdf8;
+            display: inline-block;
+            padding-bottom: 5px;
+            color: #38bdf8;
+        }
+
+        /* بخش مهارت‌ها */
+        .skills {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .skill-badge {
+            background-color: #1e293b;
+            padding: 10px 20px;
+            border-radius: 30px;
+            border: 1px solid #38bdf8;
+            font-size: 0.9rem;
+        }
+
+        /* استایل دکمه‌های دسترسی سریع */
+        .quick-nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .quick-nav a {
+            color: #38bdf8;
+            text-decoration: none;
+            border: 1px solid #38bdf8;
+            padding: 8px 20px;
+            border-radius: 20px;
+            margin: 0 5px;
+            transition: all 0.3s ease;
+            display: inline-block;
+            font-size: 0.9rem;
+        }
+
+        .quick-nav a:hover {
+            background-color: #38bdf8;
+            color: #0f172a;
+        }
+
+        /* بخش کارت‌ها */
+        .project-card {
+            background-color: #1e293b;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+            border: 1px solid #334155;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: #38bdf8;
+        }
+
+        .project-title {
+            font-size: 1.4rem;
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+
+        .project-desc {
+            color: #cbd5e1;
+            line-height: 1.6;
+        }
+
+        /* بخش درباره من */
+        .about-text {
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        .lang-en {
+            direction: ltr;
+            text-align: left;
+            color: #94a3b8;
+            margin-bottom: 20px;
+            display: block;
+            font-style: italic;
+        }
+
+        /* استایل مخصوص نقشه راه (Roadmap) */
+        .roadmap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 0;
+        }
+
+        .roadmap-step {
+            background: #1e293b;
+            border: 2px solid #38bdf8;
+            padding: 12px 20px;
+            border-radius: 50px;
+            width: 85%;
+            text-align: center;
+            font-weight: bold;
+            color: #f8fafc;
+        }
+
+        .roadmap-arrow {
+            color: #38bdf8;
+            font-size: 20px;
+            margin: 2px 0;
+        }
+
+        footer {
+            padding: 40px;
+            text-align: center;
+            color: #64748b;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mehrsam Shirgahi</h1>
+        <p class="subtitle">Python Developer & Web Builder</p>
+    </header>
+
+    <div class="container">
+
+        <!-- بخش درباره من -->
+        <section id="about">
+            <h2>درباره من</h2>
+            <div class="about-text">
+                <span class="lang-en">
+                    Hi, I'm Mehrsam Shirgahi, a passionate Web Developer and Python programmer. I focus on building functional and modern websites. I am dedicated to hard work and continuous learning to deliver the best results for my clients.
+                </span>
+                <p>سلام، من مهرسام شیرگاهی هستم، توسعه‌دهنده وب و برنامه‌نویس پایتون. تمرکز من بر ساخت وب‌سایت‌های کاربردی و مدرن است. من برای ارائه بهترین نتیجه به مشتریانم، با پشتکار و یادگیری مداوم کار می‌کنم.</p>
+            </div>
+        </section>
+
+        <!-- بخش مهارت‌ها -->
+        <section id="skills">
+            <h2>مهارت‌های من</h2>
+            <div class="skills">
+                <span class="skill-badge">Python</span>
+                <span class="skill-badge">HTML5</span>
+                <span class="skill-badge">CSS3</span>
+                <span class="skill-badge">ICDL</span>
+            </div>
+        </section>
+
+
+        <section id="projects">
+            <h2 style="text-align: center; width: 100%;">پروژه‌های من</h2>
+
+            <!-- لینک به پروژه مای‌کالا در تب جدید -->
+            <!-- target="_blank" باعث باز شدن در تب جدید می‌شود -->
+            <a href="mykala_project/index.html" target="_blank" style="text-decoration: none; color: inherit; display: block;">
+                <div class="project-card" id="project1">
+                    <div class="project-title">پروژه اول: سایت MYKALA ➔</div>
+                    <div class="project-desc">یک سایت فروشگاهی پیشرفته با چند صفحه، استایل‌های اختصاصی و منطق برنامه‌نویسی شده با JavaScript. (برای مشاهده کلیک کنید)</div>
+                </div>
+            </a>
+
+            <!-- پروژه دوم -->
+            <a href="factory_project/index2.html" target="_blank" style="text-decoration: none; color: inherit; display: block;">
+                <div class="project-card" id="project">
+                    <div class="project-title">پروژه دوم: سیستم مدیریت انبار ➔</div>
+                    <div class="project-desc">یک ابزار کاربردی برای مدیریت انبار و امور خانگی، ساخته شده با ترکیب قدرت JS و رابط کاربری HTML/CSS.(برای مشاهده کلیک کنید)</div>
+                </div>
+            </a>
+
+        <!-- بخش مدل‌های سایت -->
+        <section id="website-mode">
+            <h2>مدل‌های سایت</h2>
+            <div class="project-card">
+                <div class="project-title">مدل ساده:</div>
+                <div class="project-desc">این مدل درگاه پرداخت ندارد. اما صفحه برای کنترل مدرن و مرتبی دارد و خیلی جذاب و مدرن است.</div>
+            </div>
+            <div class="project-card">
+                <div class="project-title">مدل متوسط:</div>
+                <div class="project-desc">همان مدل ساده ولی با UI / UX زیباتر و بهتر.</div>
+            </div>
+            <div class="project-card">
+                <div class="project-title">مدل حرفه‌ای:</div>
+                <div class="project-desc">ما در حال آزمایش روی این مدل هستیم و این مدل در حال نهایی شدن است.</div>
+            </div>
+        </section>
+
+        <!-- بخش مدل پرداخت -->
+        <section id="payment-mode">
+            <h2>مدل پرداخت</h2>
+            <div class="project-card">
+                <div class="project-title">زمان:</div>
+                <div class="project-desc">من کار شما را انجام می‌دهم و بعد از اینکه سایت به دست شما رسید، بعد از ۴۸ ساعت پول را دریافت می‌کنم.</div>
+            </div>
+            <div class="project-card">
+                <div class="project-title">کیفیت و پشتیبانی:</div>
+                <div class="project-desc">در صورت اینکه سایت را دریافت کردید و پول را واریز کردید و سایت به مشکلی خورد، ما به‌صورت رایگان سایت را ترمیم می‌کنیم و در ۱۶۸ ساعت (۷ روز) سایت را سالم به شما تحویل می‌دهیم.</div>
+            </div>
+            <div class="project-card">
+                <div class="project-title">چرخه کار:</div>
+                <div class="project-desc">
+                    <div class="roadmap">
+                        <div class="roadmap-step">۱. سفارش می‌دهید</div>
+                        <div class="roadmap-arrow">↓</div>
+                        <div class="roadmap-step">۲. من کد را می‌نویسم</div>
+                        <div class="roadmap-arrow">↓</div>
+                        <div class="roadmap-step">۳. شما تست می‌کنید</div>
+                        <div class="roadmap-arrow">↓</div>
+                        <div class="roadmap-step">۴. پرداخت انجام می‌شود</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- بخش پایان -->
+        <div class="project-card" style="border-color: #38bdf8; text-align: center;">
+            <div class="project-title">پایان</div>
+            <div class="project-desc">پایان. تمامی چیزهای مورد نیاز در قیمت بالا نوشته شده است. خداحافظ.</div>
+        </div>
+
+    </div> <!-- پایان کانتینر -->
+
+    <footer>
+        ساخته شده توسط مهرسام شیرگاهی | ۲۰۲۶
+    </footer>
+
+</body>
+</html>

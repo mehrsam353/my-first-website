@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>MyKala</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+
+<div class="logo">
+MyKala 🛒
+</div>
+
+
+
+<div class="search">
+
+<input id="search" placeholder="جستجوی محصول...">
+
+</div>
+
+
+
+
+<button id="cart-btn">
+
+🛒 سبد خرید
+(<span id="cart-count">0</span>)
+
+</button>
+
+
+
+</header>
+
+
+
+
+<div class="categories">
+
+
+<button onclick="filterCategory('همه')">
+همه
+</button>
+
+
+<button onclick="filterCategory('خوراکی')">
+🍎 خوراکی
+</button>
+
+
+<button onclick="filterCategory('دیجیتال')">
+💻 دیجیتال
+</button>
+
+
+
+</div>
+
+
+
+
+
+<h1 class="title">
+محصولات
+</h1>
+
+
+
+
+<div id="products" class="products">
+
+</div>
+
+
+
+
+
+
+<div id="cart-box" class="cart">
+
+
+<h2>
+سبد خرید 🛒
+</h2>
+
+
+<div id="cart-items">
+
+</div>
+
+
+
+<h3>
+
+مجموع:
+
+<span id="total">
+0
+</span>
+
+تومان
+
+</h3>
+
+
+
+
+<button id="close-cart">
+
+بستن
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+<script src="app.js"></script>
+
+
+</body>
+
+</html>
